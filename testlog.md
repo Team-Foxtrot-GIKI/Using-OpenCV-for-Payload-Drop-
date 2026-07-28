@@ -11,3 +11,4 @@
 | Date | Stage | Observation |
 |------|-------|-------------|
 | 26-7-2026 | Raw mask (before erosion/dilation) | Mask was already very clean with calibrated HSV range, minimal background noise |
+| 27-7-2026 | After erosion/dilation (opening +closing) | Removed a few stray pixels near edges |
