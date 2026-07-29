@@ -4,7 +4,7 @@
 
 | Date | Condition | Observation | HSV Behavior |
 |------|-----------|-------------|---------------|
-| 25-7-2026 | Direct light on marker | Marker appeared near white | Saturation dropped sharply toward 0; Hue became inconsistent even though it was the same physical object |
+| 25-7-2026 | Direct light on marker | Marker appeared near white | Saturation dropped sharply toward 0. Hue became inconsistent even though it was the same physical object |
 
 ## Mask Quality / Noise Cleanup
 
@@ -12,3 +12,12 @@
 |------|-------|-------------|
 | 26-7-2026 | Raw mask (before erosion/dilation) | Mask was already very clean with calibrated HSV range, minimal background noise |
 | 27-7-2026 | After erosion/dilation (opening +closing) | Removed a few stray pixels near edges |
+
+## Contour Detection
+
+| Date | Test | Result |
+|------|------|--------|
+| 28-7-2026 | Normal distance | Area 5560, clean detection, no background noise |
+| 28-7-2026 | distance test result | Drops below 800 min area distance at around one arm's length |
+| 28-7-2026 | similar color object test result | Box still locks onto correct marker as long as it is larger than second introduced marker |
+| 28-7-2026 | Covering test result | Contour still gets picked up with the area decreasing  |
