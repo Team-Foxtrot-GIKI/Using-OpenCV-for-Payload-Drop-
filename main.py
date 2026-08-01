@@ -3,7 +3,7 @@ import numpy as np
 from dronekit import connect
 from markerconfig import LOWER_HSV, UPPER_HSV
 
-TOLERANCE = 30  #how close Cx Cy must be to frame center
+TOLERANCE = 20  #how close Cx Cy must be to frame center
 MIN_AREA = 800
 
 print("Connecting to vehicle on: tcp:127.0.0.1:5762")
