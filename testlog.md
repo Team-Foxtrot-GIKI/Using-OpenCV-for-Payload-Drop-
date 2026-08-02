@@ -54,3 +54,9 @@ TOLERANCE = 20px | Frame center: (320, 240) | Frame res: 640x480
 | Test | Result |
 |------|--------|
 | Raw per frame FPS | Highly variable (40-200), reflecting laptop cam's capture rate against python loop speed |
+
+## Velocity Correction Testing
+
+| Test | Result |
+|------|--------|
+| Sent velocity commands via send_ned_velocity() while vehicle in STABILIZE mode | Commands sent with no errors, but vehicle did not respond since STABILIZE mode ignores velocity and only accepts manual input |
