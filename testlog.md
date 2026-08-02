@@ -48,3 +48,9 @@ TOLERANCE = 20px | Frame center: (320, 240) | Frame res: 640x480
 | 2-8-2026 | 50% occluded | Still detected, centroid recalculated based on visible portion |
 | 2-8-2026 | 75% occluded | Not detected, area dropped below MIN_AREA threshold |
 | 2-8-2026 | Second similar colored object introduced | Ignored correctly, system continued tracking original marker(largest contour) |
+
+## Frame Rate Optimization
+
+| Test | Result |
+|------|--------|
+| Raw per frame FPS | Highly variable (40-200), reflecting laptop cam's capture rate against python loop speed |
